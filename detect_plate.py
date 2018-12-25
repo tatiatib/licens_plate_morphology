@@ -36,7 +36,7 @@ if cur is not None:
 
 image = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 
-kernel = cv.getStructuringElement(cv.MORPH_RECT, (4, 20)) # larger than license plate
+kernel = cv.getStructuringElement(cv.MORPH_RECT, (20, 4)) # larger than license plate
 opening = cv.morphologyEx(image, cv.MORPH_OPEN, kernel) #remove salt and increase dark spots
 
 image_sub = cv.subtract(image, opening) #with open - same as Tophat  
