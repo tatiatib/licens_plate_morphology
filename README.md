@@ -1,4 +1,4 @@
-# licens_plate_morphology
+# license_plate_morphology
 
 ავტომობილის ნომრის ამოცნობა მორფოლოგიური კერნელებით.
 
